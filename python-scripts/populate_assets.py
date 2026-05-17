@@ -71,9 +71,13 @@ def _save_mp3_from_timing_array(assets_dir, video: VideoFileClip, timing_array):
 def _audio_clips_iris_death(original_video):
     timing_array = _get_timing(os.path.dirname(__file__) + '/iris_death.csv')
     print(timing_array)
-    assets_dir = os.path.dirname(__file__) + '/assets/iris_death'
+    assets_dir = os.path.dirname(__file__) + '/assets/iris_death_audio'
     _save_mp3_from_timing_array(assets_dir, original_video, timing_array)
-    pass
+
+def _audio_clips_the_boys(original_video):
+    timing_array = _get_timing(os.path.dirname(__file__) + '/the_boys.csv')
+    assets_dir = os.path.dirname(__file__) + '/assets/the_boys_audio'
+    _save_mp3_from_timing_array(assets_dir, original_video, timing_array)
 
 def _images_iris(video: VideoFileClip):
     assets_dir = os.path.dirname(__file__) + '/assets/iris_death_png'
@@ -94,8 +98,21 @@ def _images_iris(video: VideoFileClip):
         video.save_frame(os.path.join(assets_dir, f'{t}.png'), t)
 
 
-    pass
 
+def _images_boys(video: VideoFileClip):
+    assets_dir = os.path.dirname(__file__) + '/assets/the_boys_png'
+    _make_path_directory(f'{assets_dir}/1.png')
+
+    i = 0
+    while True:
+        i += 1
+        t = round(i / 10, 2)
+        if t >= video.duration:
+            return
+        # print(t)
+        # print(os.path.join(assets_dir, f'{t}.png'))
+
+        video.save_frame(os.path.join(assets_dir, f'{t}.png'), t)
 
 def _download_iris():
     # os.chdir(_assets_dir, 'iris')
@@ -124,7 +141,18 @@ def _clip_the_boys():
     original_video: VideoFileClip = VideoFileClip('assets/The Boys S02E08 What I Know 1080p BluRay R10Bit DDP5 1 HEVC-d3g[EZTVx.to].mkv')
     print("clip")
     print(original_video)
-    video: VideoFileClip = original_video.subclipped('44:02', '44:07.2')
+
+    my_file =  pathlib.Path('assets/boys_s02e08.mp3')
+
+    if not my_file.is_file():
+        # file does not exist
+        original_video.audio.write_audiofile('assets/boys_s02e08.mp3')
+
+    
+    _audio_clips_the_boys(original_video)
+
+    video: VideoFileClip = original_video.subclipped('44:02.8', '44:07.2')
+    _images_boys(video)
 
     # audio=False
     # 44:02  - 44:06
@@ -152,6 +180,7 @@ def _clip_the_boys():
 
 
 
+
 def copy_dir_or_file(src, dst):
     # https://stackoverflow.com/questions/1994488/copy-file-or-directories-recursively-in-python
     try:
@@ -172,7 +201,8 @@ def _copy_assets_to_godot():
         # 'stormfront_punched_maeve.mp4',
         'stormfront_punched_maeve.ogv',
         # 'stormfront_punched_maeve.mkv',
-        'iris_death_png'
+        'iris_death_png',
+        'the_boys_png'
     ]
 
     for asset in assets:

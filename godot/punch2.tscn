@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c7p1rhx5ab7cd"]
+
+[ext_resource type="Texture2D" uid="uid://48xp24oo6yr5" path="res://assets/the_boys_png/0.1.png" id="1_o18mc"]
+[ext_resource type="Texture2D" uid="uid://dne1uoajhwwjg" path="res://assets/the_boys_png/0.2.png" id="2_cu56o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sucqe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_o18mc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_cu56o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Punch2" type="Node2D" unique_id=1647300851]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=819370546]
+sprite_frames = SubResource("SpriteFrames_sucqe")

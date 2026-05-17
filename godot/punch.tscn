@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cw0546yy722hy"]
+
+[ext_resource type="VideoStream" uid="uid://0wqm0il223nr" path="res://assets/stormfront_punched_maeve.ogv" id="1_hylu6"]
+
+[node name="Node2D" type="Node2D" unique_id=702055670]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=813033935]
+offset_left = 2.0
+offset_right = 740.0
+offset_bottom = 500.0
+stream = ExtResource("1_hylu6")
+autoplay = true
+expand = true
