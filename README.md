@@ -39,4 +39,19 @@ This was taken out of the English opening and all Japanese after this release do
 [Downfall (2004) - Clip 1: Steiner's Attack](https://www.youtube.com/watch?v=xBWmkwaTQ0k)
 
 
+Gihren Zabi 
 
+"You are Following The Footsteps of Adolf Hitler"
+
+Gihren Zabi's father.
+
+
+Anyways, when I think of Iris I think 
+
+https://youtu.be/xBWmkwaTQ0k?si=kuUnPn87r5VQ5bpl&t=192
+
+
+![alt text](image.png)
+
+
+The Boys S02E08 What I Know 1080p BluRay R10Bit DDP5 1 HEVC-d3g
