@@ -128,7 +128,17 @@ def _clip_the_boys():
 
     # audio=False
     # 44:02  - 44:06
-    video.write_videofile('assets/stormfront_punched_maeve.mp4')
+    # video.write_videofile('assets/stormfront_punched_maeve.mp4')
+
+
+    #   File "C:\Users\russj\dev\not-a-fan-of-repliforce\python-scripts\.venv\Lib\site-packages\moviepy\video\VideoClip.py", line 393, in write_videofile
+    # ffmpeg_write_video(
+    # ~~~~~~~~~~~~~~~~~~^
+        # self,
+
+    #  [vost#0:0 @ 0000026a3e8db600] Invalid encoder type 'libvorbis'
+    video.write_videofile('assets/stormfront_punched_maeve.ogg')
+    # video.write_videofile('assets/stormfront_punched_maeve.mkv')
 
 
 
@@ -149,7 +159,9 @@ def _copy_assets_to_godot():
     print(godot_assets_dir)
 
     assets = [
-        'stormfront_punched_maeve.mp4',
+        # 'stormfront_punched_maeve.mp4',
+        'stormfront_punched_maeve.ogg',
+        # 'stormfront_punched_maeve.mkv',
         'iris_death_png'
     ]
 
@@ -163,7 +175,7 @@ def main():
 
     # print("populate_assets")
     # _download_iris()
-    # _clip_the_boys()
+    _clip_the_boys()
 
     _copy_assets_to_godot()
 

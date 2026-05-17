@@ -488,6 +488,27 @@ wheels = [
 ]
 
 [[package]]
+name = "pygame-ce"
+version = "2.5.7"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e9/0d/bb6a6fdf1b227c0bb9a44437a70962a3854bcc541533c261e5021a5ee691/pygame_ce-2.5.7.tar.gz", hash = "sha256:86beb797cd73c141299a29b56f7df2b0543fbdc81d428022458329ff694aaa51", size = 5935870, upload-time = "2026-03-02T09:26:59.005Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/21/96/d28381210ec2ed5d7a04f77cd8f6949a7734f75a7a7d9a95fe8ed60fe3ba/pygame_ce-2.5.7-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:8766985d802017e150fcfb9adc659967d8548a961d491b8974f0748412cc0427", size = 17203240, upload-time = "2026-03-02T09:26:10.975Z" },
+    { url = "https://files.pythonhosted.org/packages/b8/f0/a3e4d0ad2519d106d178652ae7ec692e8acadf3d2260493840c27f8eabb8/pygame_ce-2.5.7-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:58eabfc184dd28c682e5e6ccfce01224bb12653c6648babcd0bb9d9bd662d938", size = 12705532, upload-time = "2026-03-02T09:26:13.795Z" },
+    { url = "https://files.pythonhosted.org/packages/13/0d/6d6c29aa5ecf63a66983bdf04066dc019290e7412f64b0ae5133c5e53d47/pygame_ce-2.5.7-cp313-cp313-manylinux2014_i686.manylinux_2_17_i686.whl", hash = "sha256:92d5732cd512c8ec0b47e9a3e6c683fb811bdf2090362580778ce698222a64ab", size = 13233559, upload-time = "2026-03-02T09:26:16.202Z" },
+    { url = "https://files.pythonhosted.org/packages/fe/96/e400d3a2c6456e3a334d9fae1f8704d964027b60064935278028dd79293f/pygame_ce-2.5.7-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:48e9a4ece43b08adc8ffb0bbbe0fe183eef4bb501a7d31552ae7398592ec0a82", size = 12811409, upload-time = "2026-03-02T09:26:19.148Z" },
+    { url = "https://files.pythonhosted.org/packages/8f/ed/8e3c6f5d4ac763f6766c2043f842b2c52028b30a4ce2ce2f5dced5961354/pygame_ce-2.5.7-cp313-cp313-win32.whl", hash = "sha256:f6439100bdee81da96f5acffb280f20511c93dd67178d8a8cf29d6cfd1aa46dd", size = 9835553, upload-time = "2026-03-02T09:26:22.123Z" },
+    { url = "https://files.pythonhosted.org/packages/06/a0/7acd164b3a206327bf53df5e5399227a5baf858ae2944cba562a0ae77e0a/pygame_ce-2.5.7-cp313-cp313-win_amd64.whl", hash = "sha256:25047c97760fc640a6a8bbfdf3398c5825adfd55986a7523a65c95a1fb61d759", size = 10413012, upload-time = "2026-03-02T09:26:24.747Z" },
+    { url = "https://files.pythonhosted.org/packages/47/d5/e4419a340ae24bd0dde5a6861406c24114f59a543aad44f1d2f2ae4752d5/pygame_ce-2.5.7-cp313-cp313-win_arm64.whl", hash = "sha256:f5a7197096ef82d588539f13b0f7ade767f800c7b0b015a94e386f488e1039f6", size = 10856939, upload-time = "2026-03-02T09:26:27.107Z" },
+    { url = "https://files.pythonhosted.org/packages/26/08/9fe0003d69077ff8faff242a85260b8a192d3b7111c02332b8b2f515d40c/pygame_ce-2.5.7-cp314-cp314-macosx_10_15_universal2.whl", hash = "sha256:addfbf7d119647eec157d611f463e5d572836fa74d0d222c59210294ed618b9d", size = 17211017, upload-time = "2026-03-02T09:26:30.243Z" },
+    { url = "https://files.pythonhosted.org/packages/40/c7/217c5430c8c612879162beb2d18cb10ad8b1b4db6ce03245289a3de6bc1b/pygame_ce-2.5.7-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:1c92feb289e34ac323a7b62b91d230a4e32b44059c4d7fb95631e504b1d9b365", size = 12710845, upload-time = "2026-03-02T09:26:33.165Z" },
+    { url = "https://files.pythonhosted.org/packages/00/a4/6fb0054bfb2522c4ad3ff82ecbc9c1a3c6694c50d24f2451717121636a1d/pygame_ce-2.5.7-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:5c1ed4100311015cc67d24fe4e4d7c2f4cb25c34e043545061271c1d018c02d4", size = 12812020, upload-time = "2026-03-02T09:26:35.953Z" },
+    { url = "https://files.pythonhosted.org/packages/a2/9b/0e0996573a9dd4bb34874c10643224a72372818242e07486c9eb4a22eebb/pygame_ce-2.5.7-cp314-cp314-win32.whl", hash = "sha256:1b7e641af3aeac92bb7e4df1402d6802271f4bd09c747d2665f154ef9b07a4e6", size = 9968590, upload-time = "2026-03-02T09:26:38.517Z" },
+    { url = "https://files.pythonhosted.org/packages/96/96/c94d0e508954093e37a77b03101a3cf51a242e02cc0ec726edcb117f8885/pygame_ce-2.5.7-cp314-cp314-win_amd64.whl", hash = "sha256:595f4257c15fed11cd816ae0bfabad3d99f8f04a000d7d164a22c0f9afd6cb65", size = 10581240, upload-time = "2026-03-02T09:26:41.139Z" },
+    { url = "https://files.pythonhosted.org/packages/81/bb/93c5dadb66ac9733ca52952e063cce117a9312d6f97facd5dc4932f3d777/pygame_ce-2.5.7-cp314-cp314-win_arm64.whl", hash = "sha256:3e6ce74fd5a5f146f1bcf0224ae3e880c733917a9edbb53f790329d235520433", size = 11057480, upload-time = "2026-03-02T09:26:43.871Z" },
+]
+
+[[package]]
 name = "pygments"
 version = "2.20.0"
 source = { registry = "https://pypi.org/simple" }
@@ -538,9 +559,14 @@ name = "python-scripts"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "imageio" },
     { name = "midi2audio" },
     { name = "moviepy" },
     { name = "pandas" },
+    { name = "pygame-ce" },
+    { name = "pythonvideoconverter" },
+    { name = "pytube" },
+    { name = "pyvips", extra = ["binary"] },
     { name = "yt-dlp", extra = ["default"] },
 ]
 
@@ -551,14 +577,69 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "imageio", specifier = ">=2.37.2" },
     { name = "midi2audio", specifier = ">=0.1.1" },
     { name = "moviepy", specifier = ">=2.2.1" },
     { name = "pandas", specifier = ">=3.0.1" },
+    { name = "pygame-ce", specifier = ">=2.5.6" },
+    { name = "pythonvideoconverter", specifier = ">=1.0.3" },
+    { name = "pytube", specifier = ">=15.0.0" },
+    { name = "pyvips", extras = ["binary"], specifier = ">=3.1.1" },
     { name = "yt-dlp", extras = ["default"], specifier = ">=2026.2.4" },
 ]
 
 [package.metadata.requires-dev]
 dev = [{ name = "pytest", specifier = ">=9.0.1" }]
+
+[[package]]
+name = "pythonvideoconverter"
+version = "1.0.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/24/6a/cc922269ef84edb2784f9035d008c5a5eabb8b95bf8f28eb3cef444558cd/PythonVideoConverter-1.0.3.tar.gz", hash = "sha256:d725feb77d7e42cbdd90bf3800111c1b98a32bb1b3e51283eead0f82b2320c59", size = 4352927, upload-time = "2019-07-25T16:39:22.46Z" }
+
+[[package]]
+name = "pytube"
+version = "15.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d8/e7/16fec46c8d255c4bbc4b185d89c91dc92cdb802836570d8004d0db169c91/pytube-15.0.0.tar.gz", hash = "sha256:076052efe76f390dfa24b1194ff821d4e86c17d41cb5562f3a276a8bcbfc9d1d", size = 67229, upload-time = "2023-05-07T19:39:01.903Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/51/64/bcf8632ed2b7a36bbf84a0544885ffa1d0b4bcf25cc0903dba66ec5fdad9/pytube-15.0.0-py3-none-any.whl", hash = "sha256:07b9904749e213485780d7eb606e5e5b8e4341aa4dccf699160876da00e12d78", size = 57594, upload-time = "2023-05-07T19:38:59.191Z" },
+]
+
+[[package]]
+name = "pyvips"
+version = "3.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cffi" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2d/6a/282936de9faac6addf6bc8792c18e006489d0023ffd8856b8643f54d0558/pyvips-3.1.1.tar.gz", hash = "sha256:84fe744d023b1084ac2516bb17064cacd41c7f8aabf8e524dd383534941b9301", size = 56951, upload-time = "2025-12-09T18:38:06.355Z" }
+
+[package.optional-dependencies]
+binary = [
+    { name = "pyvips-binary" },
+]
+
+[[package]]
+name = "pyvips-binary"
+version = "8.18.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cffi" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1c/55/38f745761aeb1726a9bb02ca9d05a1751e0acf5953d06631386e44718333/pyvips_binary-8.18.2.tar.gz", hash = "sha256:603d64f35390b10945dbe4b8184f513de48af6e074f21f077c14d723d43472c4", size = 3822, upload-time = "2026-04-03T18:52:06.888Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ab/b0/e7e3f00d1908007769007da306c51c4507448dabcc95025a530ec017958a/pyvips_binary-8.18.2-cp37-abi3-macosx_10_15_x86_64.whl", hash = "sha256:c195ef12834ffa0a266f0c56f4058dcdee510b9a34e1d91b6eea4f4ee28a5fab", size = 8479277, upload-time = "2026-04-03T18:51:47.397Z" },
+    { url = "https://files.pythonhosted.org/packages/17/ad/30937ce6006c8cfc7209a4040201803570495c97339a8412d863cc83f13a/pyvips_binary-8.18.2-cp37-abi3-macosx_11_0_arm64.whl", hash = "sha256:9bc45eb1a37076ca88a11df069dae066b7d9f22e01105bedb7cacf9883ec583f", size = 7585020, upload-time = "2026-04-03T18:51:49.493Z" },
+    { url = "https://files.pythonhosted.org/packages/41/28/21063b9be92f9cae68f991bab0e0806fa519b378dbd1a12344d3025819c9/pyvips_binary-8.18.2-cp37-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:bfd329f1e53d5e32525ed1478ddf308b78b0105696e25aed0609a74394536b89", size = 7818567, upload-time = "2026-04-03T18:51:51.418Z" },
+    { url = "https://files.pythonhosted.org/packages/13/48/e9b6a816cde78f0d21d0506f25ba3c287998c8566ae6fe99ea5944122e5e/pyvips_binary-8.18.2-cp37-abi3-manylinux_2_28_armv7l.manylinux_2_31_armv7l.whl", hash = "sha256:c4f9b066ed4ddfd326c2e113542a865475075d447fd4095dd47edc64fbe0dba5", size = 7535206, upload-time = "2026-04-03T18:51:53.111Z" },
+    { url = "https://files.pythonhosted.org/packages/44/7f/a975168aa59fe133617c31312f344ca5e6846c413bc1e48000c082e25586/pyvips_binary-8.18.2-cp37-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:eca17299dd1f5593922d52f88da3d78097faac0d27f4598a976d5dd9bc0eb9d3", size = 7763525, upload-time = "2026-04-03T18:51:55.315Z" },
+    { url = "https://files.pythonhosted.org/packages/9f/2f/22c18b200ab6bf6bea0e31f825daf496e60ef787b3663eb098302e7f5323/pyvips_binary-8.18.2-cp37-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:691941c6e384f582a72cabaebe49efefcd4eb5793d4dd1e06113f5899dbfa50b", size = 7878137, upload-time = "2026-04-03T18:51:57.661Z" },
+    { url = "https://files.pythonhosted.org/packages/6b/53/f5969e402b0094a530633294281334f5ed494d0856b71bdf1ac2000450e5/pyvips_binary-8.18.2-cp37-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:10b422558db573375a899ba39a502ba055dfc87c64fb472f2bac0ec3e04a78a9", size = 7785097, upload-time = "2026-04-03T18:51:59.496Z" },
+    { url = "https://files.pythonhosted.org/packages/1e/28/f98613a2de0c7987e3218b0a5819e6156569e116cd15c5d5d514c9d70c44/pyvips_binary-8.18.2-cp37-abi3-win32.whl", hash = "sha256:e8cb606a357c1a9dc8248e88f27155bb3010964819ccf282dd59d240473a67d5", size = 8395704, upload-time = "2026-04-03T18:52:01.435Z" },
+    { url = "https://files.pythonhosted.org/packages/88/31/47b912c443a6b9cefbccd409566250e0f0a5667abe3db8b700d95ad45c44/pyvips_binary-8.18.2-cp37-abi3-win_amd64.whl", hash = "sha256:985342e39d5fab6d5192f734bc64f3edc95bca0847c568896d1dade0fe492ee6", size = 8343719, upload-time = "2026-04-03T18:52:03.449Z" },
+    { url = "https://files.pythonhosted.org/packages/20/80/e8982a521e6c0c567264c14975052c21908d6588c8b35f7a847ecb318f8a/pyvips_binary-8.18.2-cp37-abi3-win_arm64.whl", hash = "sha256:f8c373285e586aab67020505786daf43e76d755c88f62bfca4c350a2c6f352ec", size = 7537820, upload-time = "2026-04-03T18:52:05.224Z" },
+]
 
 [[package]]
 name = "requests"
