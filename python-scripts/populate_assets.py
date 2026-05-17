@@ -137,7 +137,7 @@ def _clip_the_boys():
         # self,
 
     #  [vost#0:0 @ 0000026a3e8db600] Invalid encoder type 'libvorbis'
-    video.write_videofile('assets/stormfront_punched_maeve.ogg')
+    video.write_videofile('assets/stormfront_punched_maeve.ogv')
     # video.write_videofile('assets/stormfront_punched_maeve.mkv')
 
 
@@ -160,7 +160,7 @@ def _copy_assets_to_godot():
 
     assets = [
         # 'stormfront_punched_maeve.mp4',
-        'stormfront_punched_maeve.ogg',
+        'stormfront_punched_maeve.ogv',
         # 'stormfront_punched_maeve.mkv',
         'iris_death_png'
     ]

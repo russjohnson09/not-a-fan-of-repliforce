@@ -9,7 +9,8 @@
 # FROM linuxserver/ffmpeg:version-8.1-cli
 FROM ubuntu:22.04
 
-RUN apt-get update && apt-get install ffmpeg -y
+RUN apt-get update && apt-get install ffmpeg libvorbis-dev -y
+# sudo apt build-dep libvorbis
 
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
@@ -22,6 +23,9 @@ COPY . .
 
 
 RUN uv sync
+
+
+#ffmpeg -i assets/stormfront_punched_maeve.mkv assets/test.mp4
 
 
 # docker build . -t ffmpeg:test

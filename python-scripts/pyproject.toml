@@ -5,19 +5,10 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     # uv add midi2audio
-    "midi2audio>=0.1.1",
-        "moviepy>=2.2.1",
-            "yt-dlp[default]>=2026.2.4",
-    "pandas>=3.0.1",
-    "pyvips[binary]>=3.1.1",
-
-    "pygame-ce>=2.5.6",
-    "pytube>=15.0.0",
     "yt-dlp[default]>=2026.2.4",
-    "imageio>=2.37.2",
-    "pythonvideoconverter>=1.0.3",
+    "pandas>=3.0.1",
+
     "moviepy>=2.2.1",
-    "pyvips[binary]>=3.1.1",
     "pandas>=3.0.1",
 ]
 

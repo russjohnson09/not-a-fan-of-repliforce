@@ -18,4 +18,4 @@ services:
       context: .
     volumes:
       - ./populate_assets.py:/data/populate_assets.py
-      - ./asssets:/data/asssets
+      - ./assets:/data/assets
