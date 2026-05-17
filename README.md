@@ -58,3 +58,15 @@ The Boys S02E08 What I Know 1080p BluRay R10Bit DDP5 1 HEVC-d3g
 
 
 godot version
+
+
+44:02  - 44:06
+
+So, scale down the quality of this and overlay iris onto stormfront.
+
+https://www.spriters-resource.com/playstation/mmx4/asset/85953/
+
+
+https://www.youtube.com/watch?v=3IPIPLM8ELY
+
+
