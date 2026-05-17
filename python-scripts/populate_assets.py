@@ -133,6 +133,7 @@ def _clip_the_boys():
 
 def _copy_assets_to_godot():
 
+    
     pass
 
 def main():
