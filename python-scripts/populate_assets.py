@@ -117,11 +117,31 @@ def _download_iris():
 
     _images_iris(original_video)
 
+    # 
 
+def _clip_the_boys():
+    original_video: VideoFileClip = VideoFileClip('assets/The Boys S02E08 What I Know 1080p BluRay R10Bit DDP5 1 HEVC-d3g[EZTVx.to].mkv')
+    print("clip")
+    print(original_video)
+    video: VideoFileClip = original_video.subclipped('44:02', '44:07.2')
+
+    # audio=False
+    # 44:02  - 44:06
+    video.write_videofile('assets/stormfront_punched_maeve.mp4')
+
+
+
+def _copy_assets_to_godot():
+
+    pass
 
 def main():
 
-    print("populate_assets")
-    _download_iris()
+    # print("populate_assets")
+    # _download_iris()
+
+    _clip_the_boys()
+
+    _copy_assets_to_godot()
 
 main()
