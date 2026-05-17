@@ -137,7 +137,17 @@ def _clip_the_boys():
         # self,
 
     #  [vost#0:0 @ 0000026a3e8db600] Invalid encoder type 'libvorbis'
-    video.write_videofile('assets/stormfront_punched_maeve.ogv')
+    
+    # https://stackoverflow.com/questions/37325629/efficient-ogv-video-conversion-in-linux
+    # https://stackoverflow.com/questions/25569180/ffmpeg-convert-without-loss-quality
+    # https://superuser.com/questions/1096841/how-do-i-convert-mp4-to-ogv-while-still-retaining-the-same-quality-using-ffmpeg
+    ffmpeg_params = [
+        # "-qscale", "0",
+        "-q:v", "2",
+        "-q:a", "2"
+
+    ]
+    video.write_videofile('assets/stormfront_punched_maeve.ogv', ffmpeg_params = ffmpeg_params)
     # video.write_videofile('assets/stormfront_punched_maeve.mkv')
 
 

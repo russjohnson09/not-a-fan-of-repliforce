@@ -26,6 +26,7 @@ RUN uv sync
 
 
 #ffmpeg -i assets/stormfront_punched_maeve.mkv assets/test.mp4
+#ffmpeg -i assets/stormfront_punched_maeve.mkv assets/test.ogv
 
 
 # docker build . -t ffmpeg:test
