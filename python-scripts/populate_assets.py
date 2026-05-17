@@ -4,6 +4,7 @@ import os
 from moviepy import VideoFileClip, TextClip, CompositeVideoClip
 import pandas as pd
 import pathlib
+import shutil, errno
 
 
 IRIS_DEATH = "https://www.youtube.com/watch?v=3IPIPLM8ELY"
@@ -131,17 +132,38 @@ def _clip_the_boys():
 
 
 
-def _copy_assets_to_godot():
+def copy_dir_or_file(src, dst):
+    # https://stackoverflow.com/questions/1994488/copy-file-or-directories-recursively-in-python
+    try:
+        shutil.copytree(src, dst, dirs_exist_ok=True)
+    except OSError as exc: # python >2.5
+        if exc.errno in (errno.ENOTDIR, errno.EINVAL):
+            shutil.copy(src, dst)
+        else: raise
 
-    
+def _copy_assets_to_godot():
+    assets_dir = os.path.dirname(__file__) + '/assets'
+    godot_assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../godot/assets'))
+
+    print(assets_dir)
+    print(godot_assets_dir)
+
+    assets = [
+        'stormfront_punched_maeve.mp4',
+        'iris_death_png'
+    ]
+
+    for asset in assets:
+        print(asset)
+        copy_dir_or_file(os.path.join(assets_dir, asset), os.path.join(godot_assets_dir, asset))
+        pass
     pass
 
 def main():
 
     # print("populate_assets")
     # _download_iris()
-
-    _clip_the_boys()
+    # _clip_the_boys()
 
     _copy_assets_to_godot()
 
