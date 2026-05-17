@@ -8,6 +8,7 @@ dependencies = [
     "midi2audio>=0.1.1",
         "moviepy>=2.2.1",
             "yt-dlp[default]>=2026.2.4",
+    "pandas>=3.0.1",
 
 ]
 
