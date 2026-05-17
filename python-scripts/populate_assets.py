@@ -74,6 +74,27 @@ def _audio_clips_iris_death(original_video):
     _save_mp3_from_timing_array(assets_dir, original_video, timing_array)
     pass
 
+def _images_iris(video: VideoFileClip):
+    assets_dir = os.path.dirname(__file__) + '/assets/iris_death_png'
+    _make_path_directory(f'{assets_dir}/1.png')
+
+    print(video)
+    print(video.duration)
+
+    i = 0
+    while True:
+        i += 1
+        t = round(i / 10, 2)
+        if t >= video.duration:
+            return
+        # print(t)
+        # print(os.path.join(assets_dir, f'{t}.png'))
+
+        video.save_frame(os.path.join(assets_dir, f'{t}.png'), t)
+
+
+    pass
+
 
 def _download_iris():
     # os.chdir(_assets_dir, 'iris')
@@ -93,6 +114,8 @@ def _download_iris():
     original_video = VideoFileClip('assets/iris_death.mp4')
     original_video.audio.write_audiofile('assets/iris_death.mp3')
     _audio_clips_iris_death(original_video)
+
+    _images_iris(original_video)
 
 
 
