@@ -98,6 +98,21 @@ def _images_iris(video: VideoFileClip):
         video.save_frame(os.path.join(assets_dir, f'{t}.png'), t)
 
 
+def _images_iris_2(video: VideoFileClip):
+    assets_dir = os.path.dirname(__file__) + '/assets/iris_2_png'
+    _make_path_directory(f'{assets_dir}/1.png')
+
+    i = 0
+    while True:
+        i += 1
+        t = round(i / 10, 2)
+        if t >= video.duration:
+            return
+        # print(t)
+        # print(os.path.join(assets_dir, f'{t}.png'))
+
+        video.save_frame(os.path.join(assets_dir, f'{t}.png'), t)
+
 
 def _images_boys(video: VideoFileClip):
     assets_dir = os.path.dirname(__file__) + '/assets/the_boys_png'
@@ -202,7 +217,9 @@ def _copy_assets_to_godot():
         'stormfront_punched_maeve.ogv',
         # 'stormfront_punched_maeve.mkv',
         'iris_death_png',
-        'the_boys_png'
+        'iris_2_png',
+        'the_boys_png',
+        'the_boys_audio',
     ]
 
     for asset in assets:
@@ -211,12 +228,43 @@ def _copy_assets_to_godot():
         pass
     pass
 
+
+def _download_iris_2():
+
+    # 
+    # all cutscenes
+    # os.chdir(_assets_dir, 'iris')
+    # https://stackoverflow.com/questions/41240726/change-the-output-name-when-download-with-youtube-dl-using-python
+    ydl_opts = {'outtmpl': 'assets/mmx4_all.mp4'}
+    with YoutubeDL(ydl_opts) as ydl:
+        downloaded = ydl.extract_info("https://www.youtube.com/watch?v=ppKAi63EHRo")
+        # print("result")
+        # print(downloaded.get('id'))
+        # print(downloaded.get('title'))
+        # fullpath = _get_full_path(downloaded)
+        # print(fullpath)
+        # os.rename(fullpath, os.path.abspath(os.path.join(_assets_dir, 'iris_death.mp4')))
+        # Megaman X4： Iris's Death [3IPIPLM8ELY].mp4
+    
+    
+    original_video = VideoFileClip('assets/mmx4_all.mp4')
+    # original_video.audio.write_audiofile('assets/iris_death.mp3')
+    # _audio_clips_iris_death(original_video)
+
+    clipped_video = original_video.subclipped('5:59', '6:02')
+
+    _images_iris_2(clipped_video)
+    pass
+
+
+
 def main():
 
     # print("populate_assets")
     # _download_iris()
+    _download_iris_2()
+    
     _clip_the_boys()
-
     _copy_assets_to_godot()
 
 main()
