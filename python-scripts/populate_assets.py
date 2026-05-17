@@ -70,7 +70,7 @@ def _save_mp3_from_timing_array(assets_dir, video: VideoFileClip, timing_array):
 def _audio_clips_iris_death(original_video):
     timing_array = _get_timing(os.path.dirname(__file__) + '/iris_death.csv')
     print(timing_array)
-    assets_dir = os.path.dirname(__file__) + '/assets/'
+    assets_dir = os.path.dirname(__file__) + '/assets/iris_death'
     _save_mp3_from_timing_array(assets_dir, original_video, timing_array)
     pass
 
