@@ -1,0 +1,6 @@
+godot/build
+build/
+.godot/
+/android/
+
+assets/
