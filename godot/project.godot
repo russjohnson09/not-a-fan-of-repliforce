@@ -13,8 +13,8 @@ config_version=5
 config/name="not-a-fan-of-repliforce"
 run/main_scene="uid://c7p1rhx5ab7cd"
 config/features=PackedStringArray("4.6", "Mobile")
-boot_splash/image="uid://ckmcbk3xnlqkw"
-config/icon="uid://bsoklqlo1jk3d"
+boot_splash/image="uid://bk0md6vpass70"
+config/icon="uid://bk0md6vpass70"
 
 [display]
 
