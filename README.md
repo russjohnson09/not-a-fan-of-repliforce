@@ -70,3 +70,8 @@ https://www.spriters-resource.com/playstation/mmx4/asset/85953/
 https://www.youtube.com/watch?v=3IPIPLM8ELY
 
 
+
+For assets to copy into godot see:
+https://github.com/russjohnson09/godot-assets
+
+
