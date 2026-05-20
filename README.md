@@ -75,3 +75,5 @@ For assets to copy into godot see:
 https://github.com/russjohnson09/godot-assets
 
 
+
+Add ichigo punching no-name and the skinny guy with the glasses.
